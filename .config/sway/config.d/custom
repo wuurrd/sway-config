@@ -1,0 +1,5 @@
+set $mod Mod4
+set $menu wofi -c ~/.config/wofi/config -I -d
+
+bindsym $mod+b exec --no-startup-id "bluetoothctl devices | $menu | cut -d ' ' -f2 | xargs -I{} bluetoothctl connect {}"
+bindsym $mod+n exec --no-startup-id "nmcli device wifi list | grep -v IN-USE | $menu | awk '{print $2}' | xargs nmcli c up"

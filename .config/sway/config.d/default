@@ -126,8 +126,8 @@ exec swayidle -w\
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    # bindsym $mod+b splith
+    # bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
@@ -236,8 +236,8 @@ bindsym Control+q mode "split"
 #
 # Screenshots
 #
-    bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
-    bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
+    bindsym Shift+print exec /usr/share/sway-contrib/grimshot --notify save output
+    bindsym print exec ~/.config/sway/scripts/screenshot.sh
 #
 # Keybindings List
 #

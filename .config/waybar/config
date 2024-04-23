@@ -7,7 +7,7 @@
     "height": 30,
 
     "modules-left": [
-        "custom/launcher",
+        // "custom/launcher",
         "sway/workspaces",
         "sway/mode",
     ],
@@ -16,6 +16,7 @@
     ],
 
     "modules-right": [
+        "custom/weather",
         "network",
         "idle_inhibitor",
         "memory",
@@ -28,7 +29,6 @@
         "backlight#value",
         "clock",
         "tray",
-        //"custom/weather",
         "custom/power",
     ],
 
@@ -132,8 +132,8 @@
         //"format":"{icon}",
         "format-icons": {
             "1": "",
-            "2": "",
-            "3": "",
+            "2": "",
+            "3": "",
             "4": "",
         }
     },
@@ -163,7 +163,7 @@
     // to use the weather module replace <your_location> with your city or town
     // note: do not use spaces: new york would be newyork
     "custom/weather": {
-        "exec": "~/.config/waybar/scripts/weather.sh <your_location>", 
+        "exec": "~/.config/waybar/scripts/weather.sh oslo",
         "return-type": "json",
         "interval": 600,
     },

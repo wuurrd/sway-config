@@ -22,6 +22,8 @@ for_window [class="Signal"] focus
 
 for_window [app_id="xed"] focus
 
+# always focus urgent windows
+for_window [urgent="latest"] focus
 
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable

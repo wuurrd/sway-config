@@ -56,11 +56,13 @@ exec swayidle -w\
     bindsym $alt+Shift+p exec $menu
 
     # Activities
+    bindsym $alt+o exec /home/david/.pyenv/shims/python ~/.config/sway/scripts/movescreen.py
     bindsym $mod+p exec ~/.config/wofi/windows.py
     bindsym $alt+Tab workspace back_and_forth
 
     # Reload the configuration file
     bindsym $mod+Shift+r reload
+    bindsym $alt+Control+h exec /home/david/.pyenv/shims/python ~/.config/sway/scripts/nextscreen.py
 
 #
 # Moving around:

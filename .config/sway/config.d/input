@@ -9,6 +9,7 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
     scroll_factor 0.5
+    pointer_accel 0.325
 }
 
 # Read `man 5 sway-input` for more information about this section.
